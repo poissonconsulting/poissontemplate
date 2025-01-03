@@ -1,11 +1,11 @@
 pandoc: 3.1.11
-pkgdown: 2.1.0
+pkgdown: 2.1.1
 pkgdown_sha: ~
 articles:
   bullets: bullets.html
   headings: headings.html
   rendering: rendering.html
-last_built: 2024-09-16T12:36Z
+last_built: 2025-01-03T22:01Z
 urls:
   reference: https://poissonconsulting.github.io/poissontemplate/reference
   article: https://poissonconsulting.github.io/poissontemplate/articles
