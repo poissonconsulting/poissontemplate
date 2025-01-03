@@ -12,16 +12,18 @@ Authors@R: c(
 Description: This is a private template for use by Poisson consulting
     packages.  Please don't use for your own code.
 License: MIT + file LICENSE
-Encoding: UTF-8
-Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.2
-URL: https://poissonconsulting.github.io/poissontemplate/, https://github.com/poissonconsulting/poissontemplate
+URL: https://poissonconsulting.github.io/poissontemplate/,
+    https://github.com/poissonconsulting/poissontemplate
 BugReports: https://github.com/poissonconsulting/poissontemplate/issues
-Suggests: 
-    knitr,
-    rmarkdown
-VignetteBuilder: knitr
 Imports: 
     cli,
     desc,
     yaml
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: 
+    knitr
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
