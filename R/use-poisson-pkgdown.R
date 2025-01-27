@@ -40,6 +40,7 @@ use_poisson_pkgdown <- function(pkg = getwd()) {
   cat(paste(cli::symbol$tick, "Registered poissontemplate in pkgdown config.\n"))
   cat(paste(cli::symbol$bullet, "Check that the config edits are all harmless.\n"))
   cat(paste(cli::symbol$bullet, "Git commit and push to origin.\n"))
+  cat(paste(cli::symbol$bullet, "Contact Poisson consulting plausible owner to set up subdomain.\n"))
 
   # TODO: traffic analytics setup?
 }

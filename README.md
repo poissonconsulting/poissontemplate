@@ -52,6 +52,15 @@ or from [GitHub](https://github.com/poissonconsulting/poissontemplate)
 remotes::install_github("poissonconsulting/poissontemplate")
 ```
 
+Then contact the owner of Poisson consulting Plausible account to have a domain set up.
+Once it is done, amend and add the following lines to the pkgdown configuration file:
+
+```yaml
+includes:
+    in_header: |
+      <script defer data-domain="{YOUR DOMAIN},poissonconsulting.ca" src="https://plausible.io/js/plausible.js"></script>  
+```
+
 ## Relevant resources
 
 - pkgdown documentation about theming:
