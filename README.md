@@ -14,6 +14,9 @@ poissontemplate provides a custom [pkgdown](https://pkgdown.r-lib.org/)
 template for Poisson consulting packages. Please don’t use it for your
 own package.
 
+The website for the release version is at
+<https://poissonconsulting.github.io/poissontemplate/>.
+
 ## Setup
 
 In every package where you need to set up poissontemplate usage, run
@@ -23,18 +26,6 @@ poissontemplate::use_poisson_pkgdown()
 ```
 
 ## Installation
-
-### Release
-
-To install the release version from
-[CRAN](https://CRAN.R-project.org/package=poissontemplate).
-
-``` r
-install.packages("poissontemplate")
-```
-
-The website for the release version is at
-<https://poissonconsulting.github.io/poissontemplate/>.
 
 ### Development
 
@@ -50,15 +41,6 @@ or from [GitHub](https://github.com/poissonconsulting/poissontemplate)
 ``` r
 # install.packages("remotes")
 remotes::install_github("poissonconsulting/poissontemplate")
-```
-
-Then contact the owner of Poisson consulting Plausible account to have a domain set up.
-Once it is done, amend and add the following lines to the pkgdown configuration file:
-
-```yaml
-includes:
-    in_header: |
-      <script defer data-domain="{YOUR DOMAIN},poissonconsulting.ca" src="https://plausible.io/js/plausible.js"></script>  
 ```
 
 ## Relevant resources
