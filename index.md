@@ -1,0 +1,44 @@
+# poissontemplate
+
+poissontemplate provides a custom [pkgdown](https://pkgdown.r-lib.org/)
+template for Poisson consulting packages. Please don’t use it for your
+own package.
+
+The website for the release version is at
+<https://poissonconsulting.github.io/poissontemplate/>.
+
+## Setup
+
+In every package where you need to set up poissontemplate usage, run
+
+``` r
+
+poissontemplate::use_poisson_pkgdown()
+```
+
+## Installation
+
+### Development
+
+To install the development version from
+[r-universe](https://poissonconsulting.r-universe.dev/poissontemplate).
+
+``` r
+
+install.packages("poissontemplate", repos = c("https://poissonconsulting.r-universe.dev", "https://cloud.r-project.org"))
+```
+
+or from [GitHub](https://github.com/poissonconsulting/poissontemplate)
+
+``` r
+
+# install.packages("remotes")
+remotes::install_github("poissonconsulting/poissontemplate")
+```
+
+## Relevant resources
+
+- pkgdown documentation about theming:
+  <https://pkgdown.r-lib.org/articles/customise.html#theming>
+- pkgdown documentation on template packages:
+  <https://pkgdown.r-lib.org/articles/customise.html#template-packages>

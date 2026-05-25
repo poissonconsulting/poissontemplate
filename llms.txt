@@ -1,0 +1,64 @@
+# poissontemplate
+
+poissontemplate provides a custom [pkgdown](https://pkgdown.r-lib.org/)
+template for Poisson consulting packages. Please don’t use it for your
+own package.
+
+The website for the release version is at
+<https://poissonconsulting.github.io/poissontemplate/>.
+
+## Setup
+
+In every package where you need to set up poissontemplate usage, run
+
+``` r
+
+poissontemplate::use_poisson_pkgdown()
+```
+
+## Installation
+
+### Development
+
+To install the development version from
+[r-universe](https://poissonconsulting.r-universe.dev/poissontemplate).
+
+``` r
+
+install.packages("poissontemplate", repos = c("https://poissonconsulting.r-universe.dev", "https://cloud.r-project.org"))
+```
+
+or from [GitHub](https://github.com/poissonconsulting/poissontemplate)
+
+``` r
+
+# install.packages("remotes")
+remotes::install_github("poissonconsulting/poissontemplate")
+```
+
+## Relevant resources
+
+- pkgdown documentation about theming:
+  <https://pkgdown.r-lib.org/articles/customise.html#theming>
+- pkgdown documentation on template packages:
+  <https://pkgdown.r-lib.org/articles/customise.html#template-packages>
+
+# Package index
+
+## All functions
+
+- [`ruler()`](https://poissonconsulting.github.io/poissontemplate/reference/ruler.md)
+  : Measure the width of the console
+- [`test()`](https://poissonconsulting.github.io/poissontemplate/reference/test.md)
+  : Test function
+- [`use_poisson_pkgdown()`](https://poissonconsulting.github.io/poissontemplate/reference/use_poisson_pkgdown.md)
+  : Set up poissontemplate usage
+
+# Articles
+
+### All vignettes
+
+- [Bullets](https://poissonconsulting.github.io/poissontemplate/articles/bullets.md):
+- [Headings](https://poissonconsulting.github.io/poissontemplate/articles/headings.md):
+- [Output
+  Rendering](https://poissonconsulting.github.io/poissontemplate/articles/rendering.md):
