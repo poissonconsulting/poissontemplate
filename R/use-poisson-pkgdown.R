@@ -14,12 +14,18 @@ use_poisson_pkgdown <- function(pkg = getwd()) {
 
   current_needs <- desc::desc_get("Config/Needs/website")
   needs <- if (!is.na(current_needs)) {
-    toString(c(as.character(current_needs), "poissonconsulting/poissontemplate"))
+    toString(c(
+      as.character(current_needs),
+      "poissonconsulting/poissontemplate"
+    ))
   } else {
     "poissonconsulting/poissontemplate"
   }
   desc::desc_set("Config/Needs/website" = needs)
-  cat(paste(cli::symbol$tick, "Registered GHA dependency on poissontemplate.\n"))
+  cat(paste(
+    cli::symbol$tick,
+    "Registered GHA dependency on poissontemplate.\n"
+  ))
 
   config_path <- find_pkgdown_config(pkg)
   if (is.null(config_path)) {
@@ -37,19 +43,31 @@ use_poisson_pkgdown <- function(pkg = getwd()) {
     }
     yaml::write_yaml(config, file.path(pkg, config_path))
   }
-  cat(paste(cli::symbol$tick, "Registered poissontemplate in pkgdown config.\n"))
-  cat(paste(cli::symbol$bullet, "Check that the config edits are all harmless.\n"))
+  cat(paste(
+    cli::symbol$tick,
+    "Registered poissontemplate in pkgdown config.\n"
+  ))
+  cat(paste(
+    cli::symbol$bullet,
+    "Check that the config edits are all harmless.\n"
+  ))
   cat(paste(cli::symbol$bullet, "Git commit and push to origin.\n"))
-  cat(paste(cli::symbol$bullet, "Contact Poisson consulting plausible owner to set up subdomain.\n"))
+  cat(paste(
+    cli::symbol$bullet,
+    "Contact Poisson consulting plausible owner to set up subdomain.\n"
+  ))
 
   # TODO: traffic analytics setup?
 }
 
 find_pkgdown_config <- function(pkg) {
   possible_paths <- c(
-    "_pkgdown.yml", "_pkgdown.yaml",
-    "pkgdown/_pkgdown.yml", "pkgdown/_pkgdown.yaml",
-    "inst/_pkgdown.yml", "inst/_pkgdown.yaml"
+    "_pkgdown.yml",
+    "_pkgdown.yaml",
+    "pkgdown/_pkgdown.yml",
+    "pkgdown/_pkgdown.yaml",
+    "inst/_pkgdown.yml",
+    "inst/_pkgdown.yaml"
   )
   for (path in possible_paths) {
     if (file.exists(file.path(pkg, path))) {
