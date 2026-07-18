@@ -1,5 +1,12 @@
 # Changelog
 
+## poissontemplate 0.0.0.9002 (2026-07-18)
+
+- Add fledge-bump workflow
+- Add fledge-tag-on-merge workflow
+- Point fledge-bump caller at the .yaml reusable
+- Point fledge-tag-on-merge caller at the .yaml reusable
+
 ## poissontemplate 0.0.0.9001 (2026-05-25)
 
 - Update README install instructions.
