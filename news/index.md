@@ -1,5 +1,9 @@
 # Changelog
 
+## poissontemplate 0.0.0.9003 (2026-10-13)
+
+- Same as previous version.
+
 ## poissontemplate 0.0.0.9002 (2026-07-18)
 
 - Add fledge-bump workflow
